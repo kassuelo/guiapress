@@ -1,0 +1,33 @@
+<%- include ('../../partials/header.ejs') %>
+<%- include ('../../partials/navbar.ejs') %>
+
+<div class="row col-12 mt-5">
+    <div class="col-7">
+        <div class="card ml-5">
+            <img class="card-img-top" src="../../../images/code.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Publique seus artigos e compartilhe seu conhecimento com o Guiapress.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-5">
+        <div class="card mr-5">
+            <div class="card-header ">
+                <h4>Criação de usuário</h4>
+            </div>
+            <div class="card-body">
+                <form action="/users/create" method="POST">
+                    <input class="form-control" name="email" type="email" placeholder="email@exemplo.com">
+                    <p><% if(emailAlreadyExists) { %>
+                        Este e-mail ja foi cadastrado, tente novamente.
+                        <% } %>
+                    </p>
+                    <input class="form-control" name="password" type="password" placeholder="*******"><br>
+                    <button type="submit" class="btn btn-success btn-block">Criar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include ('../../partials/footer.ejs') %>

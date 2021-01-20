@@ -1,0 +1,27 @@
+<%- include ('../../partials/header.ejs') %>
+    <div class="row col-12 mt-5">
+    <div class="col-7">
+        <div class="card ml-5">
+            <img class="card-img-top" src="../../../images/code.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Publique seus artigos e compartilhe seu conhecimento com o Guiapress.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-5">
+        <div class="card mr-5">
+            <div class="card-header ">
+                <h4>Login</h4>
+            </div>
+            <div class="card-body">
+                <form action="/authenticate" method="POST">
+                    <input class="form-control" name="email" type="email" placeholder="email@exemplo.com"><br>
+                    <input class="form-control" name="password" type="password" placeholder="*******"><br>
+                    <button type="submit" class="btn btn-success btn-block">Logar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include ('../../partials/footer.ejs') %>
