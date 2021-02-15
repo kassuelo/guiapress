@@ -100,6 +100,6 @@ app.get("/category/:slug", (req, res) => { //lista todos artigos de uma categori
     })
 });
 
-app.listen(8080, () => {
+app.listen(3000, () => {
     console.log("O servidor está rodando!");
 });
