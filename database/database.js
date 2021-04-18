@@ -1,7 +1,7 @@
 const sequelize = require("sequelize");
 const Sequelize = require("sequelize");
-const connection = new Sequelize('kadev_database','kassuelo','#kungfu6991#',{
-    host:'mysql742.umbler.com',
+const connection = new Sequelize('banco de dados','usuario','senha',{
+    host:'mys65656565.umbler.com',
     dialect:'mysql',
     timezone:"-03:00"
 });
